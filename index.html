@@ -6,7 +6,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
@@ -18,6 +18,110 @@
   </head>
 
   <body>
-    <h1>Hello World</h1>
+    <nav id="topnav" class='navbar navbar-default'>
+      <div class="logo-container">
+        <img src="http://icdn.pro/images/en/g/e/generic-logo-icone-8024-128.png" alt="circle logo" class='pull-left'>
+        <a class='navbar-brand' href='#'>Viking Blogger</a>
+      </div>
+
+      <div class="links-container">
+        <ul class="nav navbar-nav navbar-right nav-links">
+          <li class="highlighted-btn">
+            <a href="#">
+              Create Post
+            </a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+              Example User <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a href="#">
+                  Account
+                </a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="#">
+                  Sign Out
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+      <main>
+        <div class="row">
+          <section id="search-container" class='col-md-8 col-md-offset-2'>
+            <form action="#">
+              <div class="col-md-9">
+                <input type="text" class='form-control input-lg' placeholder='Enter your search terms here...'>
+              </div>
+              <div class="col-md-3">
+                <input type="submit" class="btn btn-default btn-lg btn-block" value='Search'>
+              </div>
+            </form>
+          </section>
+        </div>
+        <section id="posts" class='col-md-8 col-md-offset-2'>
+          
+          <article class="row post">
+            <div class="col-md-9 col-centered">
+              <header>
+                <h1>
+                  <a href="#">Lorem ipsum dolor sit amet.</a>
+                </h1>
+                <div class="post-date-wrapper">
+                  <time datetime='Fri, 02 Sep 2016 00.40.29 GMT' pubdate>posted 9/16/2016 by example user</time>
+                </div>
+              </header>
+              <div class="post-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo praesentium reprehenderit voluptatibus modi quisquam reiciendis pariatur, aliquam harum obcaecati ratione! Accusantium debitis reiciendis culpa ad odio distinctio voluptates expedita natus voluptatem explicabo aspernatur, in praesentium tempora quis magnam aperiam eaque. Aperiam nesciunt incidunt excepturi, obcaecati at hic omnis! Qui, nemo!</div>
+              <div class="comment-links-wrapper">
+                <div class="view-comments">
+                  <a href="#">
+                    View 3 comments
+                  </a>
+                </div>
+                <div class="write-comment">
+                  <a href="#">
+                    Write a comment
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="row post">
+            <div class="col-md-9 col-centered">
+              <header>
+                <div class="post-date-wrapper">
+                  <time datetime='#' pubdate>
+                    posted 9/1/2016 by example user
+                  </time>
+                </div>
+              </header>
+              <div class="post-photo-wrapper">
+                <img src="https://static.pexels.com/photos/8504/wood-explosion-fire-hot.jpg" alt="wood on fire">
+              </div>
+                <div class="comment-links-wrapper">
+                  <div class="view-comments">
+                    <a href="#">
+                      View 3 comments
+                    </a>
+                  </div>
+                  <div class="write-comment">
+                    <a href="#">
+                      Write a comment
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </section>
+      </main>
   </body>
 </html>
